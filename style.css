@@ -1,0 +1,261 @@
+body{
+    margin: 0;
+}
+
+/* NAVIGATION BAR */
+
+.nav-bar{
+    padding: 1%;
+    font-size: 1.2em;
+    background-color: rgb(230, 246, 255);
+}
+.brand{
+    margin-right: 59%;
+    font-family: "Farro", sans-serif;
+    font-weight: 500;
+    font-size: 1.4em;
+}
+.nav-menu{
+    flex-basis: 100%;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.margin-vertical{
+    flex-basis: 1.5em;
+}
+.nav-item{
+    margin: 0 8% 0 0;
+    font-family: "Montserrat", sans-serif;
+}
+.nav-link:hover{
+    color: blue;
+}
+
+/* DROP DOWN MENU */
+
+.drop-menu:hover .dropdown{
+    display: block;
+}
+.drop-icon{
+    font-size: 0.8em;
+    color: grey;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.dropdown-item{
+    padding: 12%;
+    width: 150%;
+    background-color: rgb(241, 241, 241);
+    font-family: "Montserrat", sans-serif;
+}
+.dropdown-item:hover{
+    background-color: rgb(214, 214, 214);
+}
+
+
+.hamburger{
+    width: 8vw;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-hr{
+    margin: 0;
+}
+
+/* DISPLAY SECTION */
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.cont{
+    flex-basis: 100%;
+    margin-bottom: 1em;
+}
+
+/* IMAGE OVERLAY */
+
+.img-overlay{
+    margin: 4% 11%;
+}
+.car1-img{
+    width: 100%;
+}
+.button{
+    position: absolute;
+    top: 60%;
+    left: 19%;
+    color: black;
+    background-color: rgb(14, 161, 14);
+    z-index: 1;
+    padding: 0.5%;
+    width: 11%;
+    border-radius: 0.5em;
+    display: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3em;
+}
+.button p{
+    margin: 0 14%;
+}
+.img-overlay:hover .car1-img{
+    opacity: 0.5;
+}
+.img-overlay:hover .button{
+    display: inline-block;
+}
+.button:hover{
+    background-color: rgb(21, 219, 21);
+}
+
+/* HORIZONTAL SCROLL BAR */
+
+.horizontal-scroll{
+    width: 39.5vw;
+    overflow-x: scroll;
+    align-self: center;
+}
+.margin{
+    margin: 1%;
+}
+.car2{
+    width: 9vw;
+    height: 13vw;
+    border-radius: 2%;
+    margin: 2%;
+}
+
+/* CAR DETAILS */
+
+.heading-main{
+    font-size: 2.7vw;
+    padding: 0.5em;
+    margin-right: 1em;
+    font-family: "Merriweather", serif;
+}
+.heading-sub{
+    font-size: 2.1vw;
+    margin-bottom: 0;
+    margin-right: 1em;
+    font-family: "Merriweather", serif;
+}
+.details{
+    margin: 0.2em 3em 0 0;
+    text-align: justify;
+    font-size: 1.25vw;
+    color: grey;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* OTHER SECTION */
+
+.sec2-hr{
+    width: 95%;
+}
+.sec2-heading{
+    font-family: "Merriweather", serif;
+    margin: 1em;
+    margin-top: 2em;
+    font-size: 2.2vw;
+}
+.sec2-margin{
+    margin: 2% 0 4% 2%;
+}
+.car3{
+    width: 22vw;
+    height: 30vw;
+    border-radius: 0.2em;
+}
+.sec2-details{
+    font-family: "Montserrat", sans-serif;   
+    margin: 1% 1% 1% 3%;
+}
+.color{
+    color: rgb(75, 74, 74);
+}
+
+/* FOOTER */
+
+footer p{
+    text-align: center;
+    padding-top: 1.5vw;
+    font-family: "Roboto", sans-serif;
+    color: grey;
+    background-color: rgb(230, 246, 255);
+    height: 3vw;
+    margin-bottom: 0;
+    font-size: 1.25vw;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (min-width: 769px) {
+    .hamburger{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .brand{
+        font-size: 5.3vw;
+    }
+    .responsive{
+        display: none;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .button{
+        top: 50vw;
+        left: 38%;
+        width: 18%;
+        font-size: 5.3vw;
+    }
+    .horizontal-scroll{
+        width: 79vw;
+    }
+    .car2{
+        width: 18vw;
+        height: 26vw;
+    }
+    .heading-main{
+        font-size: 5.4vw;
+        margin-left: 1%;
+    }
+    .heading-sub{
+        font-size: 4.2vw;
+    }
+    .details{
+        font-size: 2.4vw;
+    }
+    .sec2-heading{
+        font-size: 4.4vw;
+    }
+    .sec2-margin{
+        align-self: center;
+    }
+    .car3{
+        width: 80vw;
+        height: 90vw;
+    }
+    footer p{
+        height: 6vw;
+        padding-top: 3vw;
+        font-size: 2.4vw;
+    }
+}

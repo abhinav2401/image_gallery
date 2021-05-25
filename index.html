@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Farro&family=Merriweather&family=Montserrat&family=Roboto&family=Rubik&display=swap" rel="stylesheet">
+
+    <title>Image Gallery Webpage</title>
+</head>
+<body>
+
+<!-- NAVIGATION BAR -->
+
+    <nav>
+        <div class="nav-bar flex-row">
+
+            <!-- BRAND NAME -->
+            <div class="brand"><a href="index.html" >Brand</a></div>
+
+            <!-- OTHER NAVIGATION BAR OPTIONS -->
+            <div class="nav-menu responsive flex-row">
+                <div class="nav-item"><a class="nav-link" href="">Home</a></div>
+                <div class="nav-item drop-menu"><a class="nav-link" href="">Category <span class="drop-icon">v</span></a>
+                    
+                    <!-- DROP DOWN MENU -->
+
+                    <div class="dropdown">
+                        <div class="dropdown-item"><a href="">Bonsai</a></div>
+                        <div class="dropdown-item"><a href="">Toys</a></div>
+                        <div class="dropdown-item"><a href="">Paintings</a></div>
+                        <div class="dropdown-item"><a href="">Weapons</a></div>
+                    </div>
+
+                </div>
+                <div class="nav-item"><a class="nav-link" href="">Contact</a></div>
+                <div class="nav-item"><a class="nav-link" href="">More</a></div>
+            </div>
+        </div>
+
+        <!-- HAMBURGER ICON -->
+        <img src="Pictures\menu.png" class="hamburger" alt="hamburger menu">
+    </nav>
+
+     <hr class="nav-hr">
+
+     <!-- DISPLAY SECTION -->
+
+    <div class="flex">
+        <div class="cont flex-col">
+
+            <!-- IMAGE OVERLAY -->
+            
+            <div class="img-overlay">
+                <div><img src="Pictures\car1.jpg" class="car1-img" alt="car photo"></div>
+                <div class="button"><p>Buy Now</p></div>
+            </div>
+             
+            <!-- HORIZONTAL SCROLL BAR -->
+
+            <div class="horizontal-scroll flex-row">
+               <div class="margin"><img src="Pictures\car2.jpg" class="car2" alt="car photo"></div>
+               <div class="margin"><img src="Pictures\car3.jfif" class="car2" alt="car photo"></div>
+               <div class="margin"><img src="Pictures\car4.jfif" class="car2" alt="car photo"></div>
+               <div class="margin"><img src="Pictures\car5.jfif" class="car2" alt="car photo"></div>
+               <div class="margin"><img src="Pictures\car8.jfif" class="car2" alt="car photo"></div>
+               <div class="margin"><img src="Pictures\car9.jfif" class="car2" alt="car photo"></div>
+               <div class="margin"><img src="Pictures\car10.jfif" class="car2" alt="car photo"></div>
+               <div class="margin"><img src="Pictures\car11.jfif" class="car2" alt="car photo"></div>
+            </div>
+
+        </div>
+
+         <!-- CAR DETAILS -->
+
+        <div class="cont">
+            <p class="heading-main">Lamborghini Huracan EVO Rear Wheel Drive (RWD)</p>
+            <p class="heading-main">PRICE: Rs 3.22 crore</p>
+            <ul>
+                <li>
+                    <p class="heading-sub">Digital touch</p>
+                    <p class="details">Inside the cockpit, there is an 8.4-inch touchscreen infotainment system with Apple Carplay. Also, it gets a fully digital instrument cluster.</p>
+                </li>
+                <li>
+                    <p class="heading-sub">Lamborghini Huracan EVO exterior</p>
+                    <p class="details">On the outside, the Huracan gets Y-shaped electric concept headlamps, a new front bumper, wider air intakes that get vertical fins, a black rear bumper and F-duct spoiler.</p>
+                </li>
+                <li>
+                    <p class="heading-sub">Engine</p>
+                    <p class="details">The Huracan Evo RWD is powered by a 5.2-litre naturally-aspirated V10 engine that can churn out 618 PS of peak power and 560 Nm of torque. Paired with a 7-speed dual-clutch transmission, the engine sends power to the rear wheels. Lamborghini claims the Huracan Evo RWD can run at a top speed of 325 kmph and it can accelerate 0-100 kmph in 3.3 seconds.</p>
+                </li>
+                <li>
+                    <p class="heading-sub">About Performance Traction Control System</p>
+                    <p class="details">Huracan Evo RWD gets Performance Traction Control System (P-TCS) that assures better torque delivery in different conditions. There are as many as three driving modes -- Strada, Sport and Corsa.</p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <hr class="sec2-hr">
+
+    <h2 class="sec2-heading">OTHER CARS</h2>
+    <div class="flex">
+        <div class="sec2-margin">
+            <img src="Pictures\car12.jfif" class="car3" alt="other car">
+            <p class="sec2-details">Lamborghini Huracan</p>
+            <p class="sec2-details color">3.22 crore</p>
+        </div>
+        <div class="sec2-margin">
+            <img src="Pictures\car14.jpg" class="car3" alt="other car">
+            <p class="sec2-details">Audi R8 5.2</p>
+            <p class="sec2-details color">2.3 crore</p>
+        </div>
+        <div class="sec2-margin">
+            <img src="Pictures\car15.jfif" class="car3" alt="other car">
+            <p class="sec2-details">Ford Shelby GT500</p>
+            <p class="sec2-details color">71.6 lakh</p>
+        </div>
+        <div class="sec2-margin">
+            <img src="Pictures\car16.jpg" class="car3" alt="other car">
+            <p class="sec2-details">Bentley Continental</p>
+            <p class="sec2-details color">3.29 crore</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>@Copyright 2021 Abhinav Goel</p>
+    </footer>
+<script src="ham.js"></script>
+</body>
+</html>
